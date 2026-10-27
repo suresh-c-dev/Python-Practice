@@ -27,6 +27,9 @@ def max_of_list(num):
         big=i
     return big
 print(max_of_list([10,20,40,60]))
+print(max_of_list([3, 8, 1, 9, 4]))
+print(max_of_list([-5, -2, -9]))
+
 
 
 #reverse the string using loop
@@ -50,4 +53,5 @@ def factorial(n):
         fact=fact*i
     return fact
 print(factorial(5))
+print(factorial(0))
 
