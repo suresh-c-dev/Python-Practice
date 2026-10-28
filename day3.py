@@ -1,15 +1,10 @@
                                 #string functions
 #1 
 def first_and_last(text):
-    ltr1=text[0]
-    ltr2=text[-1]
-    final_txt=ltr1+ltr2
-    print(ltr1)
-    print(ltr2)
-    return final_txt
+    return text[0] + text[-1]
+print("first_and_last t1:", first_and_last("python") == "pn")
+print("first_and_last t2:", first_and_last("Uday") == "Uy")
 
-print(first_and_last("Pyhton")=="Pn")
-print(first_and_last("Uday")=="Uy")
 
 
 #2
@@ -18,7 +13,7 @@ def second_and_second_last(txt):
     ltr2=txt[-2]
     return txt[1]+txt[-2]
 print(second_and_second_last("pyhton")=="yo")  
-print(second_and_second_last("uday")=="dy")  
+print(second_and_second_last("uday")=="da")  
 
 
 #3
@@ -56,9 +51,9 @@ print(second_item("red,green,blue")=="green")
 
 #7
 def remove_ends(text):
-    return text[2:-1]
-print(remove_ends("python")=="tho")
-print(remove_ends("Uday")=="a")
+    return text[1:-1]
+print(remove_ends("python")=="ytho")
+print(remove_ends("Uday")=="da")
 
 
 #8
@@ -80,12 +75,11 @@ print("add_and_clean test2: ",add_and_clean(["a","x"])==["x","z"])
 
 #2
 def fix_list(items):
-    items[0]="Start"
-    items.append("End")
+    items[0] = "START"
+    items.append("END")
     return items
-print("fix_list test 1: ",fix_list(["A","B",])==["Start","B","End"])
-print("fix_list test 2: ",fix_list(["X"])==["Start","End"])
-
+print("fix_list t1:", fix_list(["a","b"]) == ["START","b","END"])
+print("fix_list t2:", fix_list(["x"]) == ["START","END"])
 
 #3
 def top_two(nums):
